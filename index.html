@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanchana — Bioinformatics Projects</title>
+<meta name="description" content="Index of Wanchana's rice genomics and bioinformatics project sites.">
+<style>
+  :root {
+    --bg: #F6F8F3; --surface: #FFFFFF; --surface-2: #EEF3EA; --border: #DCE3D4;
+    --text: #17201A; --text-muted: #566257; --accent: #2F7A46; --accent-strong: #1B4D2C;
+    --accent-soft: #DDEFE2; --gold: #C9A227; --hero-from: #123A22; --hero-to: #2F7A46;
+    --shadow: 0 1px 2px rgba(23,32,26,.05), 0 8px 24px rgba(23,32,26,.06);
+    --shadow-hover: 0 2px 4px rgba(23,32,26,.06), 0 16px 36px rgba(23,32,26,.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1611; --surface: #172019; --surface-2: #1D2A20; --border: #2A3A2E;
+      --text: #E8EFE6; --text-muted: #9FB0A2; --accent: #5DBB7A; --accent-strong: #8FD6A5;
+      --accent-soft: #1F3A27; --gold: #E0BC4A; --hero-from: #0B2214; --hero-to: #1E5A30;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+      --shadow-hover: 0 2px 4px rgba(0,0,0,.5), 0 16px 36px rgba(0,0,0,.45);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .hero { color: #fff; background: linear-gradient(135deg, var(--hero-from), var(--hero-to)); }
+  .hero .inner { max-width: 1000px; margin: 0 auto; padding: 56px 20px 72px; }
+  .eyebrow { display: inline-block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22); padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; }
+  h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 44px); line-height: 1.12; letter-spacing: -.02em; }
+  .hero p { margin: 0; max-width: 40em; color: rgba(255,255,255,.88); font-size: clamp(15px, 2vw, 17px); }
+  main { max-width: 1000px; margin: -36px auto 0; padding: 0 20px 60px; position: relative; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; }
+  a.card { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); transition: transform .18s, box-shadow .18s, border-color .18s; }
+  a.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: var(--accent); }
+  .tag { font-size: 12px; color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 8px; }
+  .card h2 { margin: 0 0 8px; font-size: 19px; letter-spacing: -.01em; }
+  .card p { margin: 0 0 14px; font-size: 14.5px; color: var(--text-muted); flex: 1; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }
+  .chip { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted); }
+  .open { font-weight: 650; font-size: 14.5px; color: var(--accent); }
+  .open span { display: inline-block; transition: transform .15s; }
+  a.card:hover .open span { transform: translateX(4px); }
+  .howto { margin-top: 40px; font-size: 13.5px; color: var(--text-muted); }
+  footer { border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; padding: 26px 20px 40px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <span class="eyebrow">Bioinformatics · Rice genomics</span>
+    <h1>Wanchana — project sites</h1>
+    <p>Analysis results, interactive viewers and lab notebooks from rice genomics and transcriptomics projects. Each project has its own site.</p>
+  </div>
+</header>
+
+<main>
+  <div class="cards">
+
+    <a class="card" href="Rice_Stomatal_Density_PopGen_site/">
+      <div class="tag">Population genetics · Rice</div>
+      <h2>Stomatal-density candidate genes</h2>
+      <div class="chips"><span class="chip">IQ-TREE</span><span class="chip">ADMIXTURE</span><span class="chip">3K Rice Genomes</span></div>
+      <p>Population genetics of 24 stomatal-density candidate genes: combined and per-gene trees, and comparison with the 3,000 Rice Genomes Project, with interactive tree viewers.</p>
+      <div class="open">Open site <span>→</span></div>
+    </a>
+
+    <a class="card" href="Rice_Flowering_Genes_site/">
+      <div class="tag">Flowering time · Photoperiod · Rice</div>
+      <h2>Flowering-time genes</h2>
+      <div class="chips"><span class="chip">snpEff</span><span class="chip">flowering date</span><span class="chip">photosensitivity</span></div>
+      <p>SnpEff effects, flowering date and photosensitivity by SNP genotype, accession groups and gene trees for 26 flowering and photoperiod genes (Hd1, Hd3a, Ehd1, Ghd7, …).</p>
+      <div class="open">Open site <span>→</span></div>
+    </a>
+
+    <a class="card" href="RNAseq_Oui_site/">
+      <div class="tag">RNA-seq · Rice</div>
+      <h2>RNAseq Oui</h2>
+      <div class="chips"><span class="chip">HISAT2</span><span class="chip">DESeq2</span><span class="chip">GO enrichment</span></div>
+      <p>Lab notebook of an RNA-seq analysis in rice (<i>Oryza sativa</i>, 13 samples): mapping, differential expression, co-expression and pathway views.</p>
+      <div class="open">Open site <span>→</span></div>
+    </a>
+
+    <!-- To add a project: copy one <a class="card"> block above, change the href to the new repo's folder
+         (https://wanchana-ae.github.io/<repo-name>/), then update tag, title, chips and text. -->
+  </div>
+</main>
+
+<footer>Wanchana · rice genomics &amp; bioinformatics</footer>
+</body>
+</html>
