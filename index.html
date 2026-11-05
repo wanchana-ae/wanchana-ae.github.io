@@ -44,6 +44,30 @@
   .howto { margin-top: 40px; font-size: 13.5px; color: var(--text-muted); }
   footer { border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; padding: 26px 20px 40px; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style><style id="looseleaf-theme">
+/* paper theme (same as Rice_Flowering_Genes_haplotype_site); palette adapted from github.com/kevintngo/looseleaf (MIT) */
+:root{--bg:#a8c8bb;--surface:#f8f5ee;--surface-2:#efe7d4;--border:rgba(142,136,127,.65);--text:#2a2420;--text-muted:#4a433c;--accent:#2c4f9e;--accent-strong:#1f3a78;--accent-soft:#f6e9a8;--gold:#df6b3c;--hero-from:#dcc8a3;--hero-to:#e6d5b4;--hi:#f8dc4c;--rule:rgba(143,176,212,.6);--shade:58,44,30;
+--shadow:0 1px 0 rgba(var(--shade),.2),0 10px 18px -12px rgba(var(--shade),.55);--shadow-hover:0 1px 0 rgba(var(--shade),.25),0 16px 26px -12px rgba(var(--shade),.6)}
+@media (prefers-color-scheme:dark){:root{--bg:#26332e;--surface:#34302a;--surface-2:#2c2824;--border:rgba(160,152,138,.45);--text:#ece6d9;--text-muted:#cfc6b6;--accent:#9db8ff;--accent-strong:#c4d3ff;--accent-soft:#5c5127;--gold:#f08a5d;--hero-from:#4a4033;--hero-to:#58493a;--rule:rgba(143,176,212,.3);--shade:0,0,0}}
+html{background:var(--bg)}
+.hero{color:var(--text);background-color:var(--hero-from);background-image:repeating-linear-gradient(to bottom,transparent 0 31px,color-mix(in srgb,var(--rule) 50%,transparent) 31px 32px);border-bottom:2px solid rgba(var(--shade),.28);box-shadow:0 10px 18px -12px rgba(var(--shade),.6)}
+.hero p{color:var(--text-muted)}
+.eyebrow{background:var(--accent-soft);color:var(--text);border:1px solid rgba(var(--shade),.2);border-radius:3px;transform:rotate(-1.2deg);box-shadow:0 1px 0 rgba(var(--shade),.2)}
+h1{text-wrap:balance}
+.hero h1{text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--hi) 70%,transparent);text-decoration-thickness:.2em;text-underline-offset:-.1em;text-decoration-skip-ink:none}
+a.card{border-radius:3px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+a.card:nth-child(odd){transform:rotate(-.35deg)}
+a.card:nth-child(even){transform:rotate(.3deg)}
+a.card:hover{transform:rotate(0) translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--gold)}
+.tag{color:var(--accent)}
+.card p{color:var(--text-muted)}
+.chip{border-radius:3px;background:color-mix(in srgb,var(--hi) 28%,transparent);border:1px solid rgba(var(--shade),.15);color:var(--text)}
+.open{color:var(--accent)}
+footer{border-top:1px solid var(--border);color:var(--text-muted)}
+::selection{background:var(--hi);color:#2a2420}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-contrast:more){:root{--text-muted:var(--text);--border:var(--text)}a.card{border-width:2px}}
+@media (prefers-reduced-motion:reduce){a.card,a.card:hover{transform:none!important}}
 </style>
 </head>
 <body>
